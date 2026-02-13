@@ -1,0 +1,14 @@
+[project]
+name = "tursosever"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyturso>=0.4.4",
+    "mcp[cli]>=1.6.0",
+]
+
+[project.scripts]
+turso-local-mcp = "turso_mcp.local_server:main"
+turso-cloud-mcp = "turso_mcp.cloud_server:main"
